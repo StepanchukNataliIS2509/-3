@@ -1,0 +1,11 @@
+cd ~/lab3
+vim gen_file.sh
+chmod +x gen_file.sh
+./gen_file.sh rand1.txt &
+cat rand1.txt
+kill %1
+./gen_file.sh rand1.txt &
+./gen_file.sh rand2.txt &
+./gen_file.sh rand3.txt &
+cat rand1.txt rand2.txt rand3.txt
+kill %1 %2 %3
