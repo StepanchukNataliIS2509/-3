@@ -1,0 +1,10 @@
+cd ~/lab3
+vim gen_var.sh
+chmod +x gen_var.sh
+./gen_var.sh
+echo "После ./ : $RANDOM_NUM"
+source ./gen_var.sh
+echo "После source: $RANDOM_NUM"
+./gen_var.sh
+source /tmp/rand_var.sh
+echo "Через /tmp: $RANDOM_NUM"
