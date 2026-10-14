@@ -1,0 +1,8 @@
+cd ~/lab3
+vim mykill.sh
+chmod +x mykill.sh
+sleep 1000 &
+./mykill.sh --name sleep
+ps -u kukuruza -o pid=
+tty
+./mykill.sh --tty pts/0
