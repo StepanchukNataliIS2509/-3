@@ -1,0 +1,4 @@
+cd ~/llab3
+vim game.sh
+chmod +x game.sh
+./game.sh
